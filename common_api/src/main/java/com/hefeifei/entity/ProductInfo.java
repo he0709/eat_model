@@ -1,13 +1,14 @@
 package com.hefeifei.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 @Table(name = "product_info")
 public class ProductInfo {
+    @Id
+    @GeneratedValue
     private String productId;
 
     /** 名字. */
